@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets kingdom</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.7.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__container ">
+                    <button class="header__button" aria-controls="header__menu" aria-expanded="false" type="button"
+                        data-menu-button>
+                        <svg width="22" height="22" aria-label="Mobile menu">
+                            <use class="header__button-close" href="./images/sprite.svg#burgerclose"></use>
+                            <use class="header__button-burger" href="./images/sprite.svg#burgermenu"></use>
+                        </svg>
+                    </button>
+                    <nav class="header__menu " data-menu id="header__menu">
+                        <ul class="header__list">
+                            <li class="header__item"><a class="header__link" href="index.html">Home</a></li>
+                            <li class="header__item"><a class="header__link" href="#about">About</a></li>
+                            <li class="header__item"><a class="header__link" href="#products">Products</a></li>
+                            <li class="header__item"><a class="header__link" href="#services">Services</a></li>
+                        </ul>
+                    </nav>
+                    <a href="./index.html"><img class="header__logo _anim__items _anim__stop" src="./images/logo.svg" alt="Logo"></a>
+                    <div>
+                        <a class=" button__contact button button__secondary" href="#contact">Contact</a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero">
+                <div class=" container">
+                    <div class="hero__container">
+                        <div class="hero__content">
+                            <h1 class="hero__title title title__big _anim__items _anim__stop">A better world for pets</h1>
+                            <a href="#contact" class="hero__button button button__secondary _anim__items _anim__stop">Explore</a>
+                        </div>
+                        <div class="hero__wrapp  _anim__items _anim__stop">
+                            <div class="hero__swiper swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="hero__swiper-wrapper swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <img src="./images/hero/img001b.png" alt="Dog">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <img src="./images/hero/img002b.png" alt="Cat">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <img src="./images/hero/img003b.png" alt="Dog">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <img src="./images/hero/img004b.png" alt="Cat">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <img src="./images/hero/img001b.png" alt="Dog">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <img src="./images/hero/img002b.png" alt="Cat">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <img src="./images/hero/img003b.png" alt="Dog">
+                                    </div>
+                                    <div class="hero__swiper-slide swiper-slide">
+                                        <img src="./images/hero/img004b.png" alt="Cat">
+                                    </div>
+                                </div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="hero__swiper-button">
+                                    <div class="hero__swiper-button-right">
+                                        <svg width="34px" height="16px">
+                                            <use href="./images/sprite.svg#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="hero__swiper-button-left">
+                                        <svg width="54px" height="26px">
+                                            <use href="./images/sprite.svg#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="hero__bg" src="./images/hero/bg.png" alt="Hero background">
+            </section>
+
+            <section id="about" class="about">
+                <button class="scrollup">
+                <svg class="scrollup__svg" width="54px" height="26px">
+                    <use href="./images/sprite.svg#scrollup"></use>
+                </svg>
+            </button>
+                <div class="about__container container">
+                    <div class="about__us">
+                        <div class="about__img _anim__items _anim__stop">
+                            <img src="./images/about/img001.jpg" alt="About us">
+                        </div>
+                        <div class="about__content">
+                            <h3 class="about__label text__label _anim__items _anim__stop">About us</h3>
+                            <h2 class="about__title title _anim__items _anim__stop">Treating pet like Royalty</h2>
+                            <p class="about__text text__italic _anim__items _anim__stop">“They’re not just pets, they’re family”</p>
+                            <p class="about__text _anim__items _anim__stop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam
+                                mi
+                                id augue
+                                ultrices, in tempus elit tristique.
+                                Aliquam ultrices sem non.</p>
+                            <a href="#services" class="about__button button button__primary _anim__items _anim__stop">Explore</a>
+                        </div>
+                    </div>
+                    <ul class="about__services">
+                        <li class="about__services-item">
+                            <div class="about__services-img">
+                                <img src="./images/about/food.svg" alt="Pet food">
+                            </div>
+                            <p class="title title__small">Pet food</p>
+                        </li>
+                        <li class="about__services-item">
+                            <div class="about__services-img">
+                                <img src="./images/about/care.svg" alt="Pet care">
+                            </div>
+                            <p class="title title__small">Pet care</p>
+                        </li>
+                        <li class="about__services-item">
+                            <div class="about__services-img">
+                                <img src="./images/about/accessories.svg" alt="Pet accessories">
+                            </div>
+                            <p class="title title__small">Pet accessories</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <img class="about__bg" src="./images/products/bg01.png" alt="About background">
+            </section>
+
+            <section id="products" class="products">
+                <div class="products__container container">
+                    <div class="products__content">
+                        <h3 class="products__label text__label">Our Products</h3>
+                        <h2 class="products__title title">For all your pet needs</h2>
+                        <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam
+                            mi id augue
+                            ultrices, in tempus elit.</p>
+                    </div>
+                    <ul class="products__list">
+                        <li class="products__item">
+                            <div class="products__item-wrapp">
+                                <a href="#">
+                                    <img class="products__img" src="./images/products/img001.png" alt="Luxury pet bed">
+                                </a>
+                                <button class="products__add button button__primary">Add to cart</button>
+                            </div>
+                            <div class="products__block">
+                                <a class="products__block-title title title__small">Luxury pet bed</a>
+                                <p class="products__block-text">$120</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__item-wrapp">
+                                <a href="">
+                                    <img class="products__img" src="./images/products/img002.png" alt="Cat Food">
+                                </a>
+                                <button class="products__add button button__primary">Add to cart</button>
+                            </div>
+
+                            <div class="products__block">
+                                <a class="products__block-title title title__small">Cat Food</a>
+                                <p class="products__block-text">$20</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__item-wrapp">
+                                <a href=""><img class="products__img" src="./images/products/img003.png"
+                                        alt="Dog food"></a>
+                                <button class="products__add button button__primary">Add to cart</button>
+                            </div>
+
+                            <div class="products__block">
+                                <a class="products__block-title title title__small">Dog food</a>
+                                <p class="products__block-text">$30</p>
+                            </div>
+                        </li>
+                        <li class="products_itemt">
+                            <div class="products__item-wrapp">
+                                <a href=""><img class="products__img" src="./images/products/img004.png"
+                                        alt="Treat for dog"></a>
+                                <button class="products__add button button__primary">Add to cart</button>
+                            </div>
+
+                            <div class="products__block">
+                                <a class="products__block-title title title__small">Treat for dog</a>
+                                <p class="products__block-text">$60</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__item-wrapp">
+                                <a href=""><img class="products__img" src="./images/products/img005.png"
+                                        alt="Scratching toy for cat"></a>
+                                <button class="products__add button button__primary">Add to cart</button>
+                            </div>
+
+                            <div class="products__block">
+                                <a class="products__block-title title title__small">Scratching toy for cat</a>
+                                <p class="products__block-text">$200</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__item-wrapp">
+                                <a href=""><img class="products__img" src="./images/products/img006.png"
+                                        alt="Teddy bear for dog"></a>
+                                <button class="products__add button button__primary">Add to cart</button>
+                            </div>
+
+                            <div class="products__block">
+                                <a class="products__block-title title title__small">Teddy bear for dog</a>
+                                <p class="products__block-text">$80</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__item-wrapp">
+                                <a href=""><img class="products__img" src="./images/products/img007.png"
+                                        alt="Treats Knot Bone"></a>
+                                <button class="products__add button button__primary">Add to cart</button>
+                            </div>
+
+                            <div class="products__block">
+                                <a class="products__block-title title title__small">Treats Knot Bone</a>
+                                <p class="products__block-text">$8</p>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__item-wrapp">
+                                <a href=""><img class="products__img" src="./images/products/img008.png"
+                                        alt="Dog bowls"></a>
+                                <button class="products__add button button__primary">Add to cart</button>
+                            </div>
+
+                            <div class="products__block">
+                                <a class="products__block-title title title__small">Dog bowls</a>
+                                <p class="products__block-text">$70</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <img class="products__bg" src="./images/products/bg.png" alt="ProductsAbout background">
+            </section>
+
+            <section id="services" class="services">
+                <div class="services__container container">
+                    <div class="services__img  _anim__items _anim__stop">
+                        <img src="./images/services/001.jpg" alt="Our services">
+                    </div>
+                    <div class="services__content">
+                        <h3 class="services__label text__label  _anim__items _anim__stop">our services</h3>
+                        <h2 class="services__title title  _anim__items _anim__stop">Quality Things for Loving Pets</h2>
+                        <p class="services__text text__italic  _anim__items _anim__stop">“More than a Pet Store…”</p>
+                        <p class="services__text  _anim__items _anim__stop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam
+                            mi id augue ultrices, in tempus elit tristique.
+                            Aliquam ultrices sem non.</p>
+                        <a href="#contact" class="services__button button button__secondary  _anim__items _anim__stop">Explore</a>
+                    </div>
+                </div>
+                <img class="services__bg-right" src="./images/footer/decor02.svg" alt="Services background">
+                <img class="services__bg-left" src="./images/services/002.png" alt="Services background">
+            </section>
+
+            <section id="articles" class="articles">
+                <div class="articles__container container">
+                    <ul class="articles__list">
+                        <li class="articles__item">
+                            <a class="articles__img" href="#"><img src="./images/articles/001.jpg" alt="Img001"></a>
+                            <a class="articles__content" href="">Taking dogs care to the next level
+                                <svg class="articles__svg" width="53px" height="24px">
+                                    <use href="./images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li class="articles__item">
+                            <a class="articles__img" href="#"><img src="./images/articles/002.jpg" alt="Img002"></a>
+                            <a class="articles__content" href="">We value the best health of your pets
+                                <svg class="articles__svg" width="53px" height="24px">
+                                    <use href="./images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="articles__item">
+                            <a class="articles__img" href="#"><img src="./images/articles/003.jpg" alt="Img003"></a>
+                            <a class="articles__content" href="">Trust us with your pet’s vacation<svg
+                                    class="articles__svg" width="53px" height="24px">
+                                    <use href="./images/sprite.svg#arrow"></use>
+                                </svg></a>
+                        </li>
+                        <li class="articles__item">
+                            <a class="articles__img" href="#"><img src="./images/articles/004.jpg" alt="Img004"></a>
+                            <a class="articles__content" href="">We treat cats with utmost care
+                                <svg class="articles__svg" width="53px" height="24px">
+                                    <use href="./images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="articles__bg1" src="./images/products/bg01.png" alt="Background">
+                <img class="articles__bg2" src="./images/products/bg.png" alt="Background">
+            </section>
+
+            <section id="contact" class="contact">
+                <img class="contact__bg" src="./images/contact/bg.svg" alt="Background">
+                <div class="contact__container container">
+                    <div class="contact__img">
+                        <img class="contact__img-top _anim__items _anim__stop" src="./images/contact/001.jpg" alt="Cat">
+                        <div class="contact__img-wrapp">
+                            <a class="contact__img-play" target="_blank" href="https://maps.app.goo.gl/4FsbS5oBH2M2LXEA8">
+                                <img src="./images/contact/play.svg" alt="Icon play">
+                            </a>
+                        
+                            <img class="contact__img-bottom _anim__items _anim__stop" src="./images/contact/002.jpg" alt="Dog">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <h3 class="contact__label text__label _anim__items _anim__stop">Contact us</h3>
+                        <h2 class="contact__title title _anim__items _anim__stop">Come for the care, leave with a smile</h2>
+                        <address>
+                            <div class="contact__wrapp _anim__items _anim__stop">
+                                <img class="contact__icon" src="./images/contact/clock.svg" alt="Icon clock">
+                                <ul class="contact__list">
+                                    <li class="contact__text text">Monday/Friday 9:00-23:00</li>
+                                    <li class="contact__text">Saturday 10:00-21:00</li>
+                                </ul>
+                            </div>
+                            <div class="contact__wrapp _anim__items _anim__stop">
+                                <img class="contact__icon" src="./images/contact/geo.svg" alt="Icon geo">
+                                <ul class="contact__list">
+                                    <li class="contact__text"><a href="tel:+0123456789">+012-345-6789</a></li>
+                                    <li class="contact__text"><a
+                                            href="mailto:TheWildKingdom@contact.com">TheWildKingdom@contact.com</a></li>
+                                    <li class="contact__text">9889 Lorem Ipsum street, Pellentesque, CA, USA</li>
+                                </ul>
+                            </div>
+                        </address>
+
+                        <a href="tel:+0123456789" class="contact__button button button__primary _anim__items _anim__stop">Contact</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="reviews__container container">
+                    <div class="reviews__img">
+                        <img src="./images/reviews/reviews.svg" alt="Reviews">
+                    </div>
+                    <div class="reviews__swiper swiper">
+
+                        <!-- Additional required wrapper -->
+                        <div class="reviews__swiper-wrapper swiper-wrapper">
+
+                            <!-- Slides -->
+                            <div class="reviews__swiper-slide swiper-slide">
+                                <div class="reviews__swiper-wrapp">
+                                    <!-- <img class="reviews__paragraph-top" src="./images/reviews/paragraph.svg" alt="Paragraph"> -->
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra
+                                    ante id congue.
+                                    Cras feugiat, diam a
+                                    placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
+                                    <!-- <img class="reviews__paragraph-bottom" src="./images/reviews/paragraph.svg" alt="Paragraph"> -->
+                                </div>
+                                <h2 class="reviews__title title">Etiam vulputate</h2>
+                            </div>
+                            <div class="reviews__swiper-slide swiper-slide">
+                                <div class="reviews__swiper-wrapp">
+                                    <!-- <img class="reviews__paragraph-top" src="./images/reviews/paragraph.svg" alt="Paragraph"> -->
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra
+                                    ante id congue.
+                                    Cras feugiat, diam a
+                                    placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
+                                    <!-- <img class="reviews__paragraph-bottom" src="./images/reviews/paragraph.svg" alt="Paragraph"> -->
+                                </div>
+                                <h2 class="reviews__title title">Etiam vulputate</h2>
+                            </div>
+                            <div class="reviews__swiper-slide swiper-slide">
+                                <div class="reviews__swiper-wrapp">
+                                    <!-- <img class="reviews__paragraph-top" src="./images/reviews/paragraph.svg" alt="Paragraph"> -->
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra
+                                    ante id congue.
+                                    Cras feugiat, diam a
+                                    placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
+                                    <!-- <img class="reviews__paragraph-bottom" src="./images/reviews/paragraph.svg" alt="Paragraph"> -->
+                                </div>
+                                <h2 class="reviews__title title">Etiam vulputate</h2>
+                            </div>
+
+                        </div>
+                        <!-- If we need navigation buttons -->
+
+
+                    </div>
+                    <div class="reviews__swiper-button-prev">
+                        <svg width="74px" height="33px">
+                            <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="reviews__swiper-button-next">
+                        <svg width="74px" height="33px">
+                            <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__sitemap _anim__items _anim__stop">
+                        <p class="footer__sitemap-text">Sitemap</p>
+                        <ul class="footer__sitemap-list">
+                            <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="index.html">Home</a>
+                            </li>
+                            <li class="footer__sitemap-item"><a class="footer__sitemap-link" href="#about">About</a>
+                            </li>
+                            <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                    href="#products">Products</a></li>
+                            <li class="footer__sitemap-item"><a class="footer__sitemap-link"
+                                    href="#services">Services</a></li>
+                        </ul>
+                        <ul class="footer__sitemap-list">
+                            <li class="footer__sitemap-item">
+                                <a href="#">
+                                    <svg width="16px" height="15px">
+                                        <use href="./images/sprite.svg#tw"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__sitemap-item">
+                                <a href="#">
+                                    <svg width="16px" height="15px">
+                                        <use href="./images/sprite.svg#inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__sitemap-item">
+                                <a href="#">
+                                    <svg width="16px" height="15px">
+                                        <use href="./images/sprite.svg#tik"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__logo _anim__items _anim__stop">
+                        <a href="index.html"><img src="./images/logo.svg" alt="Logo"></a>
+                    </div>
+                    <div class="footer__subscribe _anim__items _anim__stop">
+                        <h3 class="footer__subscribe-title title title__medium">Treating all the pets present here like
+                            royalty.</h3>
+                        <form id="footer-form" class="footer__subscribe-form" action="https://formspree.io/f/mrgvzepn" method="POST">
+                            <input id="email" class="footer__subscribe-input _req _email" name="form[]" type="text"
+                                placeholder="Enter email address">
+                            <label class="footer__subscribe-label" for="email"></label>
+                            <button class="footer__subscribe-button" type="submit">Subscribe</button>
+                            <p id="subscribe-status" class="subscribe__status"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    ©2024 Frontend Developer <a href="https://github.com/Zinaida-Razinkova">Razinkova Zinaida</a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/button-top.js"></script>
+    <script src="./js/form-footer.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+
+</html>

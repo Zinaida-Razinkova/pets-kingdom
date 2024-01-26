@@ -1,0 +1,156 @@
+.about {
+    position: relative;
+    padding-top: 320px;
+    padding-bottom: 80px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0px 0;
+    }
+}
+
+.about__container {
+    position: relative;
+    z-index: 1;
+}
+
+.about__bg {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.about__us {
+    display: flex;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        gap: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 115px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+        flex-direction: column-reverse;
+    }
+}
+
+.about__img {
+    border: 1px solid $text-color2;
+    padding: 20px;
+
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 10px;
+    }
+}
+
+.about__content {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+}
+
+.about__label {
+    margin-bottom: 30px;
+}
+
+.about__title {
+    color: $text-color2;
+    margin-bottom: 25px;
+}
+
+.about__text {
+    max-width: 458px;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+.about__services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    @media screen and (min-width: 1280px) {
+        justify-content: center;
+        gap: 293px;
+    }
+}
+
+.about__services-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $text-color1;
+    width: 140px;
+    height: 140px;
+    padding: 30px;
+    margin: 0 auto 30px auto;
+
+    @media screen and (max-width: 768px) {
+        width: 80px;
+        height: 80px;
+        padding: 15px;
+
+    }
+}
+
+.about__services-item p {
+    text-align: center;
+}
+
+// Animation elements
+
+.about__label,
+.about__title,
+.about__text,
+.about__button {
+    transform: translate(150px, 0px);
+    opacity: 0;
+}
+.about__img {
+    transform: translate(-150px, 0px);
+    opacity: 0;
+}
+
+.about__label._active,
+.about__title._active,
+.about__text._active,
+.about__button._active,
+.about__img._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.about__img._active {
+    transition-delay: 0.5s;
+}
+.about__label._active {
+    transition-delay: 1s;
+}
+
+.about__title._active {
+    transition-delay: 1.5s;
+}
+
+.about__text._active._active {
+    transition-delay: 2s;
+}
+.about__button._active._active {
+    transition-delay: 2.5s;
+}

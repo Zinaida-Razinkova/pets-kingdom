@@ -1,0 +1,150 @@
+.products {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 170px;
+    @media screen and (max-width: 768px) {
+            padding: 50px 0;
+        }
+}
+
+.products__container {
+    position: relative;
+    z-index: 1;
+}
+
+.products__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transform: scale(-1, 1)
+}
+
+.products__content {
+    text-align: center;
+}
+
+.products__label {
+    margin-bottom: 20px;
+}
+
+.products__title {
+    color: $text-color2;
+    margin-bottom: 20px;
+}
+
+.products__text {
+    max-width: 458px;
+    margin: 0 auto 40px auto;
+}
+
+.products__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 50px;
+    row-gap: 60px;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+}
+
+.products__item {
+    max-width: 353px;
+}
+
+.products__img {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.products__block {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.products__block-title {
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.products__block-text {
+    font-size: 24px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.products__item-wrapp {
+    position: relative;
+
+    &:hover {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: $text-color2;
+            opacity: 0.3;
+        }
+
+        .products__add {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.products__add {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: hidden;
+    transition: opasity 0.3s;
+    z-index: 2;
+    max-width: 180px;
+    
+    @media (any-hover: none) {
+        top: auto;
+        transform: translate(-50%, 0);
+        bottom: 0;
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+
+        border-radius: 0px;
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 475px) {
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,243 @@
+.footer {
+    position: relative;
+    background-color: $primary-color;
+    padding-top: 100px;
+
+    @media screen and (max-width: 860.98px) {
+        padding-top: 30px;
+    }
+}
+
+.footer::before,
+.footer::after {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    pointer-events: none;
+
+    @media screen and (max-width: 375px) {
+        display: none;
+    }
+}
+
+.footer::before {
+    bottom: 0;
+    left: 0;
+    background: url(../../images/footer/decor01.svg) no-repeat;
+    width: 457px;
+    height: 403px;
+
+    @media screen and (max-width: 475px) {
+        display: none;
+    }
+}
+
+.footer::after {
+    top: 0;
+    right: 0;
+    background: url(../../images/footer/decor02.svg) no-repeat;
+    width: 492px;
+    height: 354px;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 45px;
+
+    @media screen and (max-width: 860.98px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+}
+
+.footer__sitemap-text {
+    font-family: $accent-font;
+    font-size: 20px;
+    color: $text-color1;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 860.98px) {
+        margin-bottom: 10px;
+    }
+}
+
+.footer__sitemap-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &:not(:last-child) {
+        margin-bottom: 39px;
+
+        @media screen and (max-width: 860.98px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        gap: 15px;
+    }
+}
+
+.footer__sitemap-link {
+    color: $text-color1;
+    font-weight: 300;
+
+    &:hover,
+    &:focus {
+        color: $text-color2;
+    }
+}
+
+.footer__logo {
+    position: relative;
+    z-index: 0;
+
+    @media screen and (max-width: 1150px) {
+        max-width: 150px;
+    }
+}
+
+.footer__logo::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: -30px;
+    left: -132px;
+    width: 1px;
+    height: 150px;
+    background-color: $text-color1;
+
+    @media screen and (max-width: 1320px) {
+        left: -50px;
+    }
+
+    @media screen and (max-width: 1150px) {
+        left: -15px;
+        height: 100px;
+    }
+
+    @media screen and (max-width: 861px) {
+        display: none;
+    }
+}
+
+.footer__logo::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: -132px;
+    z-index: 0;
+    width: 1px;
+    height: 150px;
+    background-color: $text-color1;
+
+    @media screen and (max-width: 1320px) {
+        right: -50px;
+    }
+
+    @media screen and (max-width: 1150px) {
+        right: -15px;
+        height: 100px;
+    }
+
+    @media screen and (max-width: 861px) {
+        display: none;
+    }
+}
+
+.footer__subscribe {
+    max-width: 367px;
+}
+
+.footer__subscribe-title {
+    color: $text-color1;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1150px) {
+        margin-bottom: 15px;
+    }
+}
+
+
+.footer__subscribe-input {
+    color: $text-color1;
+    background-color: transparent;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid $text-color1;
+    cursor: pointer;
+}
+
+.footer__subscribe-input::placeholder {
+    color: $text-color1;
+}
+
+
+.footer__subscribe-button {
+    color: $text-color1;
+    background-color: transparent;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $text-color1;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $text-color2;
+    }
+}
+
+.footer__copyright {
+    text-align: center;
+    padding-top: 42px;
+    padding-bottom: 32px;
+    border-top: 1px solid $text-color1;
+    color: $text-color1;
+}
+
+.subscribe__status {
+color: $text-color1;
+margin-top: 10px;
+}
+
+.footer__subscribe-input._error {
+    box-shadow: 0 0 15px #e89f71;
+}
+
+// Animation elements
+
+.footer__sitemap {
+    transform: translate(-150px, 0px);
+    opacity: 0;
+}
+
+.footer__logo {
+    transform: translate(0px, 50px);
+    opacity: 0;
+}
+
+.footer__subscribe {
+    transform: translate(150px, 0px);
+    opacity: 0;
+}
+
+.footer__sitemap._active,
+.footer__logo._active,
+.footer__subscribe._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.footer__sitemap._active,
+.footer__subscribe._active {
+    transition-delay: 0.5s;
+}
+.footer__logo._active {
+    transition-delay: 1s;
+}

@@ -1,0 +1,44 @@
+.button {
+    max-width: 137px;
+    font-family: inherit;
+    font-weight: 300;
+    padding: 12px 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button__primary {
+    background-color: $text-color1;
+    border: 1px solid $text-color1;
+    color: $primary-color;
+}
+
+.button__secondary {
+    background-color: transparent;
+    color: $text-color2;
+    border: 1px solid $text-color2;
+
+}
+
+.button.button__secondary:hover,
+.button.button__secondary:focus {
+    border: 1px solid $text-color1;
+    color: $text-color1;
+}
+
+.button.button__primary:hover,
+.button.button_primary:focus {
+    background-color: $text-color2;
+    border: 1px solid $text-color2;
+}
+
+.button__contact {
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+}
