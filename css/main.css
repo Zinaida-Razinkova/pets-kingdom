@@ -904,6 +904,11 @@
   }
 }
 
+.articles__title {
+  display: none;
+  margin-bottom: 60px;
+}
+
 .contact {
   position: relative;
   padding-top: 67px;
@@ -1191,7 +1196,7 @@
 }
 
 .reviews__title {
-  color: #9D875C;
+  color: #45413a;
 }
 @media screen and (max-width: 1440px) {
   .reviews__title {
